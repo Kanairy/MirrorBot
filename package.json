@@ -1,7 +1,6 @@
 {
   "name": "mirror-bot",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.15.0",
@@ -22,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/HMAN1911/mirror-bot/issues"
   },
-  "homepage": "https://github.com/HMAN1911/mirror-bot#readme"
+  "homepage": "https://github.com/HMAN1911/mirror-bot#readme",
+  "description": ""
 }
