@@ -10,6 +10,7 @@ app.get('/', function (req, res) {
 app.get('/webhook/', function (req, res) {
  if (req.query['hub.verify_token'] === 'mirror_bot_verify') {
    res.send(req.query['hub.challenge']);
+   console.log('yay!')
  }
  res.send('Error, wrong validation token');
 })
