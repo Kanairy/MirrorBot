@@ -1,4 +1,4 @@
-curl -ik -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=<EAARCLXSRVw8BALzpETKjnO6qGRRwGFKnSvRRylar3n27ZBVywZCQVxFS5OWa32vTNMNjj00Ce2TDV31iLZAAJY87hGB068xmMI6iK6kA3tqv07823TpwvDVpWHste2AFy1icHJa6sipZCo7RvPTnRj8QjdmRyepe10osHWb3XAZDZD>"
+curl -ik -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=<EAARCLXSRVw8BAEDrm4gPhKXjbaZAblCu1nKwGowElq87h6rSeJgjNmnlNazIXKPxaefo4W45MkHuGvUhZA1zMtHDv5wauWRWw4t0y8ygXdU1mcHZBMcA86AYm8vYC2UhRIjG1b1RfjC3ieE9dHrBfguKXYAXrCXA6es6FYjIAZDZD>"
 
 var express = require('express');
 var app = express();
