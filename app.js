@@ -1,4 +1,3 @@
-curl -ik -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=<EAARCLXSRVw8BAEDrm4gPhKXjbaZAblCu1nKwGowElq87h6rSeJgjNmnlNazIXKPxaefo4W45MkHuGvUhZA1zMtHDv5wauWRWw4t0y8ygXdU1mcHZBMcA86AYm8vYC2UhRIjG1b1RfjC3ieE9dHrBfguKXYAXrCXA6es6FYjIAZDZD>"
 
 var express = require('express');
 var app = express();
