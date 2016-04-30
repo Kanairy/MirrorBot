@@ -1,0 +1,21 @@
+{
+  "name": "mirror-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HMAN1911/mirror-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HMAN1911/mirror-bot/issues"
+  },
+  "homepage": "https://github.com/HMAN1911/mirror-bot#readme"
+}
