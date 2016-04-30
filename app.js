@@ -1,28 +1,22 @@
-
 var express = require('express');
+var bodyParser = require('body-parser');
+var request = require('request');
 var app = express();
 
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+app.listen((process.env.PORT || 3000));
+
+// Server frontpage
 app.get('/', function (req, res) {
-  console.log("hellos");
-  res.send('Hello Page');
+    res.send('This is TestBot Server');
 });
 
-app.get('/webhook/', function (req, res) {
- if (req.query['hub.verify_token'] === 'mirror_bot_verify') {
-   res.send(req.query['hub.challenge']);
-   console.log('yay!')
- }
- res.send('Error, wrong validation token');
-})
-
-app.get('/privatepolicy', function (req, res) {
-  console.log("private policy");
-  res.send('private policy');
+// Facebook Webhook
+app.get('/webhook', function (req, res) {
+    if (req.query['hub.verify_token'] === 'mirror_bot_verify') {
+        res.send(req.query['hub.challenge']);
+    } else {
+        res.send('Invalid verify token');
+    }
 });
-
-
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
-
-app.listen(process.env.PORT || 4730);
