@@ -1,4 +1,4 @@
-curl -ik -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=<token>"
+curl -ik -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=<EAARCLXSRVw8BALzpETKjnO6qGRRwGFKnSvRRylar3n27ZBVywZCQVxFS5OWa32vTNMNjj00Ce2TDV31iLZAAJY87hGB068xmMI6iK6kA3tqv07823TpwvDVpWHste2AFy1icHJa6sipZCo7RvPTnRj8QjdmRyepe10osHWb3XAZDZD>"
 
 var express = require('express');
 var app = express();
@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/webhook/', function (req, res) {
- if (req.query['hub.verify_token'] === '<validation_token>') {
+ if (req.query['hub.verify_token'] === '<mirror_bot_verify>') {
    res.send(req.query['hub.challenge']);
  }
  res.send('Error, wrong validation token');
