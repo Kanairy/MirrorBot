@@ -14,6 +14,12 @@ app.get('/webhook/', function (req, res) {
  res.send('Error, wrong validation token');
 })
 
+app.get('/privatepolicy', function (req, res) {
+  console.log("private policy");
+  res.send('private policy');
+});
+
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
