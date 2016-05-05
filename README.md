@@ -14,6 +14,7 @@ __Goals:__
 __Version 1:__
 ==============
 Objectives:
-1. Express.js server - pushed to gitHub and ready to go
-2. Facebook BOT API - set up a Facebook account / configure settings for bot messenger
-3. (Modulus + Node)
+
+  1. Express.js server - pushed to gitHub and ready to go
+  2. Facebook BOT API - set up a Facebook account / configure settings for bot messenger
+  3. (Modulus + Node)
