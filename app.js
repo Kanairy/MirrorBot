@@ -32,7 +32,7 @@ app.post('/webhook', function (req, res) {
             if(event.message.text ==="test") {
                 sendGenericMessage(event.sender.id);
             } else {
-            sendMessage(event.sender.id, {text: "Hello: " + event.sender.id});
+            sendMessage(event.sender.id, {text: "Hello: " + getUserName() });
         }
         }
     }
@@ -67,6 +67,7 @@ function getUserName(userId) {
                 "name": "First Lastname",
                 "id": "user_id"
 }
+        return user.name
 console.log(user)
 }
 
