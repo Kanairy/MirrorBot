@@ -58,6 +58,19 @@ function sendMessage(recipientId, message) {
     });
 };
 
+function getUserName(userId) {
+ var user = request({
+        url: 'https://graph.facebook.com/983576398362498?fields=name',
+        qs: {access_token: process.env.PAGE_ACCESS_TOKEN},
+        method: 'GET',
+        json: {
+                "name": "First Lastname",
+                "id": "user_id"
+}
+console.log(user)
+}
+
+
 // send back Structured Messages (cards)
 function sendGenericMessage(sender) {
   messageData = {
