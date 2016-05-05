@@ -66,10 +66,11 @@ function getUserName() {
         json: {
                 "name": "First Lastname",
                 "id": "user_id"
-}
-        return user.name
-console.log(user)
-}
+        }
+    });
+    return user.name
+
+};
 
 
 // send back Structured Messages (cards)
