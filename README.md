@@ -6,7 +6,7 @@ MirrorBot is currently in early Alpha.
 
 MirrorBot is built using [node](http://nodejs.org/en/), [express](http://expressjs.com/) and the [Facebook Messenger API](http://developers.facebook.com/docs/messenger-platform).
 
-It is currently being hosted on Heroku, so response times can be a little slow.
+MirrorBot is currently being hosted on Heroku, so response times can be a little slow.
 
 
 ![MirrorBot](http://i.imgur.com/cukDfMH.png?3)
